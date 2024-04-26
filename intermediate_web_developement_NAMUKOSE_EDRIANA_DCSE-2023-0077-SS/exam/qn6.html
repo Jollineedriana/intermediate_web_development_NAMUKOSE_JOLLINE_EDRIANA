@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Numbers</title>
+</head>
+<body>
+    <script>
+        function squareNumbers() {
+            var result = document.createElement("ol");
+            for (var i = 1; i <= 6; i++) {
+                var listItem = document.createElement("li");
+                var square = i * i;
+                listItem.textContent = "Square of " + i + " is " + square;
+                result.appendChild(listItem);
+                console.log(square);
+            }
+            document.body.appendChild(result);
+        }
+
+        squareNumbers();
+    </script>
+</body>
+</html>
